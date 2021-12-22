@@ -1,7 +1,8 @@
-package com.ajijul.tdd
+package com.ajijul.tdd.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ajijul.tdd.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
