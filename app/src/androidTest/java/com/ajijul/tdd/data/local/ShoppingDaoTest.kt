@@ -5,6 +5,8 @@ import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.SmallTest
+import com.ajijul.tdd.launchFragmentInHiltContainer
+import com.ajijul.tdd.ui.ShoppingFragment
 import com.google.common.truth.Truth.assertThat
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
@@ -44,6 +46,13 @@ class ShoppingDaoTest {
     @After
     fun tearDown() {
         shoppingItemDB.close()
+    }
+
+    @Test
+    fun launchShoppingFragment(){
+        launchFragmentInHiltContainer<ShoppingFragment>{
+
+        }
     }
 
     @Test
